@@ -51,7 +51,9 @@ function Navbar() {
         </div>
         <div className="flex flex-col items-center" id="logo">
           <img src="/Logo1.png" className="w-[6rem]" />
-          <p className="text-5xl  logo font-logoType">Soujourn</p>
+          <p className=" text-xl sm:text-2xl md:text-5xl transition-all  logo font-logoType">
+            Soujourn
+          </p>
         </div>
         <div>
           <button
