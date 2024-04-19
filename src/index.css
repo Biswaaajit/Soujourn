@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.headingCover {
+  background: linear-gradient(#0d1014d4, rgba(118, 118, 83, 0)),
+    url("/HeadingCover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.feed {
+  background: linear-gradient(#09182ad4, rgba(6, 20, 13, 0.365)),
+    url("/feed.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact {
+  background: linear-gradient(#222c39a6, rgba(6, 20, 13, 0.365)),
+    url("https://images.unsplash.com/photo-1622308644420-b20142dc993c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slick-next {
+  right: 28px;
+}
+.slick-prev {
+  left: 10px;
+  z-index: 555;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  opacity: 1;
+}
+.cal {
+  background-color: none;
+}
