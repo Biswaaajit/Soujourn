@@ -17,7 +17,7 @@ function RoomNo({ dispatch, user }) {
         </p>
       </div>
       {showRoom && (
-        <div className="flex bg-yellow-500/40 py-3 justify-around mt-1 rounded-md border-2 border-zinc-600/50">
+        <div className="flex bg-yellow-600/40 py-3 justify-around mt-1 rounded-md border-2 border-zinc-600/50">
           <p className="text-xl font-semibold">Room</p>
           <div className="flex items-center gap-4">
             <button

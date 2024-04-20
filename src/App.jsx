@@ -6,6 +6,7 @@ import Prestige from "./pages/Room/Prestige";
 import Double from "./pages/Room/Double";
 import Signature from "./pages/Room/Signature";
 import ContactUs from "./pages/Contact/ContactUs";
+import BookingDone from "./pages/BookingDone";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactUs />,
+  },
+  {
+    path: "/reservation",
+    element: <BookingDone />,
   },
 ]);
 function App() {

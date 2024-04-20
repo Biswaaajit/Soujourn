@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
 // import CLean from "../pages/Room/Form/CLean";
 const initial = {
   room: 1,
@@ -63,6 +64,7 @@ function reducer(state, action) {
 function RoomForm({ price }) {
   const [user, dispatch] = useReducer(reducer, initial);
   const { room } = user;
+  const navigate = useNavigate();
   useGSAP(() => {
     gsap.from("#Rform", {
       scale: 0,
@@ -76,6 +78,7 @@ function RoomForm({ price }) {
   function handleForm(e) {
     e.preventDefault();
   }
+
   return (
     <div
       className="py-8 w-full sm:w-fit mx-0 sm:mx-auto  my-8 xl:my-10 shadow-[0px_0px_60px_-30px_rgba(0,0,0,0.3)]"
@@ -107,13 +110,13 @@ function RoomForm({ price }) {
             <p>Total Cost</p>
             <p>₹{price * room}</p>
           </div>
-          <button className=" w-[70%] mt-8 text-[#dc8409] bg-zinc-900 py-2 font-semibold text-lg rounded-md">
+          <button
+            className=" w-[70%] mt-8 text-[#dc8409] bg-zinc-900 py-2 font-semibold text-lg rounded-md"
+            onClick={() => navigate("/reservation")}
+          >
             Book Your Stay Now
           </button>
         </div>
-
-        {/* <p>Extra Services</p>
-        <CLean /> */}
       </form>
     </div>
   );
