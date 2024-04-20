@@ -26,7 +26,6 @@ function MobileNavbar({ setShowNav, navigate, showNav }) {
   function handleRoom(x) {
     if (x === 1) navigate("/deluxe");
     if (x === 2) navigate("/double");
-
     if (x === 3) navigate("/prestige");
     if (x === 4) navigate("/signature");
     setShowNav(false);

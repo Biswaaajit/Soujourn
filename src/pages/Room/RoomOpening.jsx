@@ -9,7 +9,7 @@ function RoomOpening({ text }) {
     t1.from("#logo", {
       y: -150,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.5,
     });
     t1.from("#navi p", {
       y: -150,
@@ -19,7 +19,7 @@ function RoomOpening({ text }) {
     t1.from("#menu,#book", {
       y: -150,
       opacity: 0,
-      stagger: 0.5,
+      stagger: 0.1,
     });
   });
   return (

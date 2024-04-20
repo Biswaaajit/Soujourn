@@ -49,7 +49,11 @@ function Navbar() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center" id="logo">
+        <div
+          className="flex flex-col items-center cursor-pointer"
+          id="logo"
+          onClick={() => navigate("/")}
+        >
           <img src="/Logo1.png" className="w-[6rem]" />
           <p className=" text-xl sm:text-2xl md:text-5xl transition-all  logo font-logoType">
             Soujourn

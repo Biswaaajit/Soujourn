@@ -78,10 +78,21 @@ function RoomImgView() {
   function handleRoom() {
     if (view.id === 1) {
       navigate("/deluxe");
+      window.scrollTo(0, 0);
     }
-    if (view.id === 0) navigate("/double");
-    if (view.id === 2) navigate("/prestige");
-    if (view.id === 3) navigate("/signature");
+    if (view.id === 0) {
+      navigate("/double");
+      window.scrollTo(0, 0);
+    }
+
+    if (view.id === 2) {
+      navigate("/prestige");
+      window.scrollTo(0, 0);
+    }
+    if (view.id === 3) {
+      navigate("/signature");
+      window.scrollTo(0, 0);
+    }
   }
   return (
     <div id="RView">

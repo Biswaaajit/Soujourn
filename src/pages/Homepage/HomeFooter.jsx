@@ -28,7 +28,8 @@ function HomeFooter() {
     });
   });
   function handleRoom() {
-    navigate("/booking");
+    navigate("/booking", { scroll: false, replace: true });
+    window.scrollTo(0, 0);
   }
   return (
     <div
